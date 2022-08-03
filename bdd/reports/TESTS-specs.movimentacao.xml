@@ -1,0 +1,44 @@
+<testsuite name="specs.movimentacao.Cadastrar Movimentações na ferramenta" tests="3" errors="0" failures="0" skipped="0" time="59.229487" timestamp="2022-07-26T10:52:45.931444" hostname="CTNDELLGMJCP63"><testcase classname="specs.movimentacao.Cadastrar Movimentações na ferramenta" name="Cadastrar uma movimentação" status="passed" time="18.678595"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @cadastrar_movimentacao
+  Cenário: Cadastrar uma movimentação
+    Dado que esteja logado ... passed in 8.189s
+    Dado que tenha acessado a pagina de movimentacoes ... passed in 5.092s
+    Quando preencher os dados necessarios ... passed in 5.341s
+    Então a movimentacao deve ser cadastrada ... passed in 0.057s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="specs.movimentacao.Cadastrar Movimentações na ferramenta" name="Alterar uma movimentação" status="passed" time="24.214936"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @alterar_movimentacao
+  Cenário: Alterar uma movimentação
+    Dado que esteja logado ... passed in 8.285s
+    Dado que tenha acessado a pagina de extrato ... passed in 5.263s
+    E selecionado uma movimentacao ... passed in 5.162s
+    Quando preencher os dados a serem alterados ... passed in 5.455s
+    Então a movimentação deve ser alterada ... passed in 0.049s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="specs.movimentacao.Cadastrar Movimentações na ferramenta" name="Excluir uma movimentação" status="passed" time="16.335957"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @excluir_movimentacao
+  Cenário: Excluir uma movimentação
+    Dado que esteja logado ... passed in 7.994s
+    Dado que tenha acessado a pagina de extrato ... passed in 5.198s
+    Quando excluir uma movimentacao ... passed in 3.105s
+    Então a mesma deve ser removida com sucesso ... passed in 0.039s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

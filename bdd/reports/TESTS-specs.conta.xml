@@ -1,0 +1,15 @@
+<testsuite name="specs.conta.Cadastrar uma nova conta" tests="1" errors="0" failures="0" skipped="0" time="17.783744" timestamp="2022-07-27T10:16:59.533878" hostname="CTNDELLGMJCP63"><testcase classname="specs.conta.Cadastrar uma nova conta" name="Excluir a primeira conta" status="passed" time="17.783744"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @excluir_primeira_conta
+  Cenário: Excluir a primeira conta
+    Dado que esteja logado ... passed in 7.477s
+    Dado que tenha acessado a pagina de conta ... passed in 8.184s
+    Quando clicar em excluir a primeira conta ... passed in 2.068s
+    Então a conta deve ser excluida ... passed in 0.055s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

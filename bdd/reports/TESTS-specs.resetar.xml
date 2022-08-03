@@ -1,0 +1,14 @@
+<testsuite name="specs.resetar.Resetar site de testes" tests="1" errors="0" failures="0" skipped="0" time="11.817643" timestamp="2022-08-02T10:47:12.202267" hostname="CTNDELLGMJCP63"><testcase classname="specs.resetar.Resetar site de testes" name="Resetar site" status="passed" time="11.817643"><system-out>
+<![CDATA[
+@scenario.begin
+
+  @resetar
+  Cenário: Resetar site
+    Dado que esteja logado ... passed in 7.714s
+    Quando clicar no menu referente a opcao reset ... passed in 3.179s
+    Então o site deve ser resetado ... passed in 0.925s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

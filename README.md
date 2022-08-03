@@ -1,1 +1,1 @@
-# python_with_playwright_2
+# python_with_playwright
