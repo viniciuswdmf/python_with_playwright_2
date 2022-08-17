@@ -1,0 +1,12 @@
+<testsuite name="specs.produtos.Administraçao de produtos" tests="1" errors="0" failures="0" skipped="0" time="35.734036" timestamp="2022-08-17T09:50:40.601538" hostname="CTNDELLGMJCP63"><testcase classname="specs.produtos.Administraçao de produtos" name="Excluir produto" status="passed" time="35.734036"><system-out>
+<![CDATA[
+@scenario.begin
+  Cenário: Excluir produto
+    Dado que esteja logado ... passed in 2.392s
+    Quando clicar no icone de exclusao ... passed in 33.149s
+    Então o produto devera ser excluido ... passed in 0.193s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

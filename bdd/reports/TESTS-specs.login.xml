@@ -1,9 +1,9 @@
-<testsuite name="specs.login.Login no site de teste" tests="1" errors="0" failures="0" skipped="0" time="7.544474" timestamp="2022-08-01T09:50:14.631779" hostname="CTNDELLGMJCP63"><testcase classname="specs.login.Login no site de teste" name="Fazer login com sucesso" status="passed" time="7.544474"><system-out>
+<testsuite name="specs.login.Login no site da Loja" tests="1" errors="0" failures="0" skipped="0" time="2.249069" timestamp="2022-08-16T09:56:07.697183" hostname="CTNDELLGMJCP63"><testcase classname="specs.login.Login no site da Loja" name="Realizar login com erro -- @1.1 " status="passed" time="2.249069"><system-out>
 <![CDATA[
 @scenario.begin
-  Cenário: Fazer login com sucesso
-    Quando realizar login com CPF e senha válidos ... passed in 7.488s
-    Então deve validar que o login foi realizado com sucesso ... passed in 0.057s
+  Esquema do Cenário: Realizar login com erro -- @1.1 
+    Quando realizar login com "78578" invalido ... passed in 2.114s
+    Então deve ser retornada a "Falha ao fazer o login" de erro ... passed in 0.135s
 
 @scenario.end
 --------------------------------------------------------------------------------

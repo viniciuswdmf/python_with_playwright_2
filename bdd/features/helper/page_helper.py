@@ -15,8 +15,8 @@ class PageHelper():
     def acessar(self, context, url_complemento):
         context.ambiente = context.config.userdata["ambiente"]
         context.url_stage = "http://165.227.93.41/lojinha-web/"
-        # context.url_dev = "https://barrigaLoja.wcaquino.me/"
-        # context.url_prod = "https://barrigaLoja.wcaquino.me/"
+        context.url_dev = "http://165.227.93.41/lojinha-web/"
+        context.url_prod = "http://165.227.93.41/lojinha-web/"
 
         if context.ambiente == "dev":
             context.page.goto(context.url_dev+url_complemento)
