@@ -11,11 +11,13 @@ class LojaLogin():
 
     def acessar_site_login(self, context):
         context.page_helper.acessar(context, "")
+        
 
     def fazer_login_com_parametros(self, context, user, senha):
         context.page.fill(login_elements['INP_LOGIN'], user)
         context.page.fill(login_elements['INP_SENHA'], senha)
         context.page.click(login_elements['INP_BTN_LOGIN']) 
+        time.sleep(8)
     
     def fazer_login_sem_sucesso(self, context, login):
         context.page.fill(login_elements['INP_LOGIN'], login)  

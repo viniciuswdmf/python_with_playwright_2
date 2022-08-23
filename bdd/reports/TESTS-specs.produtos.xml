@@ -1,10 +1,43 @@
-<testsuite name="specs.produtos.Administraçao de produtos" tests="1" errors="0" failures="0" skipped="0" time="35.734036" timestamp="2022-08-17T09:50:40.601538" hostname="CTNDELLGMJCP63"><testcase classname="specs.produtos.Administraçao de produtos" name="Excluir produto" status="passed" time="35.734036"><system-out>
+<testsuite name="specs.produtos.Administraçao de produtos" tests="1" errors="1" failures="0" skipped="0" time="52.280206" timestamp="2022-08-23T09:43:19.990125" hostname="CTNDELLGMJCP63"><testcase classname="specs.produtos.Administraçao de produtos" name="Editar produto" status="failed" time="52.280206"><error type="TimeoutError" message="Timeout 10000ms exceeded.&#10;=========================== logs ===========================&#10;waiting for selector &quot;body &gt; div:nth-child(3) &gt; div &gt; ul &gt; li:nth-child(1) &gt; span &gt; a&quot;&#10;============================================================">
+<![CDATA[
+Failing step: Quando selecionar determinado produto ... failed in 39.065s
+Location: features/specs/produtos.feature:21
+Traceback (most recent call last):
+  File "C:\Users\vinicius.jacques\AppData\Local\Programs\Python\Python310\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "C:\Users\vinicius.jacques\AppData\Local\Programs\Python\Python310\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\produtos_steps.py", line 32, in selecionar_primeiro
+    context.Loja.home.selecionar_primeiro_item(context)
+  File "C:\python_with_playwright_2\bdd\features\page_objects\Loja\pages\home.py", line 27, in selecionar_primeiro_item
+    context.page.click(home_elements['LINK_PRIMEIRO_PRODUTO'])
+  File "C:\Users\vinicius.jacques\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\sync_api\_generated.py", line 8007, in click
+    self._sync(
+  File "C:\Users\vinicius.jacques\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_sync_base.py", line 89, in _sync
+    return task.result()
+  File "C:\Users\vinicius.jacques\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_page.py", line 691, in click
+    return await self._main_frame.click(**locals_to_params(locals()))
+  File "C:\Users\vinicius.jacques\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_frame.py", line 474, in click
+    await self._channel.send("click", locals_to_params(locals()))
+  File "C:\Users\vinicius.jacques\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_connection.py", line 43, in send
+    return await self._connection.wrap_api_call(
+  File "C:\Users\vinicius.jacques\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_connection.py", line 370, in _
+    return await result
+  File "C:\Users\vinicius.jacques\AppData\Local\Programs\Python\Python310\lib\site-packages\playwright\_impl\_connection.py", line 78, in inner_send
+    result = next(iter(done)).result()
+playwright._impl._api_types.TimeoutError: Timeout 10000ms exceeded.
+=========================== logs ===========================
+waiting for selector "body > div:nth-child(3) > div > ul > li:nth-child(1) > span > a"
+============================================================
+]]>
+</error><system-out>
 <![CDATA[
 @scenario.begin
-  Cenário: Excluir produto
-    Dado que esteja logado ... passed in 2.392s
-    Quando clicar no icone de exclusao ... passed in 33.149s
-    Então o produto devera ser excluido ... passed in 0.193s
+  Cenário: Editar produto
+    Dado que esteja logado ... passed in 13.215s
+    Quando selecionar determinado produto ... failed in 39.065s
+    E alterar suas informações ... skipped in 0.000s
+    Então o mesmo deve ser atualizado ... skipped in 0.000s
 
 @scenario.end
 --------------------------------------------------------------------------------

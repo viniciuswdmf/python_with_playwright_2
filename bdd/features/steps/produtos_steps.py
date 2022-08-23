@@ -24,3 +24,19 @@ def excluir_item(context):
 @then(u'o produto devera ser excluido')
 def validar_item_excluido(context):
     context.Loja.home.validar_exclusao_primeiro_item(context)
+
+######################alterar steps
+
+@when(u'selecionar determinado produto')
+def selecionar_primeiro(context):
+    context.Loja.home.selecionar_primeiro_item(context)
+
+
+@when(u'alterar suas informações')
+def alterar_dados(context):
+    context.Loja.produtos.alterar_produto(context, 'TV LCD TESTE QA ALTERADA', '555,00', 'Amarela')
+
+
+@then(u'o mesmo deve ser atualizado')
+def validar_alteracao(context):
+    context.Loja.produtos.validar_produto_ok(context)

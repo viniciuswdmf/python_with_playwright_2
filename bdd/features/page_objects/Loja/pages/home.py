@@ -22,6 +22,9 @@ class LojaHome():
     def validar_exclusao_primeiro_item(self, context):
         locator = context.page.locator(home_elements['TOAST_EXCLUSAO'])
         expect(locator).to_be_visible()
+
+    def selecionar_primeiro_item(self, context):
+        context.page.click(home_elements['LINK_PRIMEIRO_PRODUTO'])
     
 #     def acessar_extrato(self, context):
 #         context.page.click(home_elements['MENU_EXTRATO'])

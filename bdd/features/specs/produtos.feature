@@ -8,11 +8,16 @@ Funcionalidade: Administraçao de produtos
 Contexto: Estar logado
     Dado que esteja logado
 
-# Cenário: Adicionar produto
-#     Quando clicar no botao adicionar produto
-#     E preencher as informaçoes do mesmo
-#     Então o produto deve ser cadastrado
+Cenário: Adicionar produto
+    Quando clicar no botao adicionar produto
+    E preencher as informaçoes do mesmo
+    Então o produto deve ser cadastrado
 
 Cenário: Excluir produto
     Quando clicar no icone de exclusao
     Então o produto devera ser excluido
+
+Cenário: Editar produto
+    Quando selecionar determinado produto
+    E alterar suas informações
+    Então o mesmo deve ser atualizado
